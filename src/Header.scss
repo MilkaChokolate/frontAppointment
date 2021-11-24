@@ -2,8 +2,11 @@
   background: #C5E9FF;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
+  justify-content: center;
+  h1{
+    margin-right: 400px;
+  }
 }
 #logo {
-  margin-left: 150px;
   margin-right: 70px;
 }

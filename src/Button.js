@@ -2,8 +2,9 @@ import React from "react";
 
 function Button(props){
     return (
-        <div>
-            <button style={{background : props.background}}>{props.textOfButton}</button>
+        <div id='hrefAndButton'>
+            <input type='submit' style={{background : props.background}} value={props.textOfButton} id=''></input>
+            <p><a>{props.textOfHref}</a></p>
         </div>
     )
 }
