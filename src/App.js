@@ -2,14 +2,12 @@
 import './App.css';
 import Registration from "./Registrotion";
 import Authorization from "./Authorization";
-import Appointments from "./Appointments";
+import Appointment from "./Appointment";
 
 function App() {
   return (
     <div className="App">
       <Registration></Registration>
-      <Authorization></Authorization>
-      <Appointments></Appointments>
     </div>
   );
 }

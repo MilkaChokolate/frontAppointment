@@ -1,0 +1,25 @@
+#form {
+  background: #FFFFFF;
+  border-radius: 4px;
+  margin-top: 50px;
+  padding: 30px;
+  margin-left: 30px;
+}
+.registration {
+  display: flex;
+  flex-direction: column;
+  background: #C5E9FF;
+  height: 100vh;
+}
+.contentOfAuthorization {
+  display: flex;
+  justify-content: center;
+  input[type=submit]{
+    height: 40px;
+    width: 149px;
+    float: right;
+  }
+}
+#hrefAuth{
+  float: right;
+}

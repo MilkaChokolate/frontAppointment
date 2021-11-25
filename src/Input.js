@@ -1,13 +1,19 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import './Input.scss'
 
-function Input(props){
+function Input({label,type,onChange, value, ...rest}){
     return(
         <div>
-            <p>{props.lable}:</p>
-            <input type={props.type} placeholder={props.lable} id={props.id}/>
+            <p>{label}:</p>
+            <input type={type} placeholder={label} onChange={onChange} value={value} {...rest} />
         </div>
     )
 }
+
+Input.propTypes = {
+    label: PropTypes.string,
+    onChange: PropTypes.func,
+};
 
 export default Input;

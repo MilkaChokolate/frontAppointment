@@ -1,25 +1,24 @@
-import React from "react";
+import React, {useState} from "react";
 import Header from "./Header";
 import './Registration.scss'
-import Vector2 from "./Vector2.png";
-import FormComponent from "./FormComponent";
 import HospitalLogo from "./HospitalLogo";
 import Input from "./Input";
-import Button from "./Button";
 
 function Registration(props){
+    const [reg,regState] = useState();
     return (
         <div className='registration'>
             <Header header='Зарегистрироваться'></Header>
-            <div className='content'>
+            <div className='contentOfRegistration'>
                 <HospitalLogo></HospitalLogo>
                 <div id='form'>
                     <form>
                         <h1>Регистрация</h1>
-                        <Input lable='Login' type='text' id='inputLogin'></Input>
-                        <Input lable='Password' type='password' id='inputPassword'></Input>
-                        <Input lable='Password' type='password' id='inputRepeatPassword'></Input>
-                        <Button textOfButton='Зарегистрироваться' background='white' float='right' textOfHref='Авторизироваться'></Button>
+                        <Input label="Username" type='text' required/>
+                        <Input label='Password' type='password' required/>
+                        <Input label='Repeat password' type='password'  required/>
+                        <button type='submit' onClick={() => regState()}>Зарегистрироваться</button>
+                        <div id='hrefReg'><a>Авторизироваться</a></div>
                     </form>
                 </div>
             </div>

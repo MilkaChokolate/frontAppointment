@@ -4,7 +4,21 @@
   background: #C5E9FF;
   height: 100vh;
 }
-.content {
+.contentOfRegistration {
   display: flex;
-  justify-content: center
+  justify-content: center;
+  button{
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;;
+    width: 195px;
+    height: 40px;
+    float: right;
+    margin-right: 37px;
+    margin-top: 20px;
+  }
+}
+#hrefReg{
+  float: right;
 }
