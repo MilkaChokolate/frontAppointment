@@ -19,7 +19,6 @@ function Registration(props){
     const handleSubmit = async (e) =>{
         e.preventDefault();
         e.stopPropagation();
-        console.log(formState)
 
         const resp = await fetch('http://localhost:3012/Registration', {
             method: 'POST',
@@ -31,7 +30,8 @@ function Registration(props){
             )
         });//запрос на сервер для добавление юзера в БД
         let commits = await resp.json();
-        console.log(commits)
+        console.log(commits);
+        alert(JSON.stringify(commits.result));
     }
 
     return (
